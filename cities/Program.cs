@@ -15,11 +15,11 @@ internal class Program
 
         //todo: 3F Hány város adatait tartalmazza a CSV fájl? (CitiesMethods)
         CityMethods cityMethods = new CityMethods();
-        cityMethods.LoadFromCSV("popp_city.csv");
+        cityMethods.LoadFromCSV("pop_city.csv");
         Console.WriteLine(cityMethods.CityCount());
         //todo: 4F Melyik 10 város volt a legnépesebb 2020-ban? (CitiesMethods)
 
-        cityMethods.Top10City(2010);
+        Console.WriteLine(cityMethods.Top10City(2010));
         //todo: 5F Kérje be billentyűzetről egy város nevét! Ha nem létezik, akkor jelezze azt és kérje be újra! (CitiesMethods)
         //         Miután létező nevet adott meg, döntse el, hogy a város lakossága folyamatosan növekedett-e az évek alatt?
         //todo: 6F Írja (bigCities.CSV) fájlba a 2020-ban 1 millió főnél nagyobb népességgel rendelkező városokat! (CitiesMethods)
